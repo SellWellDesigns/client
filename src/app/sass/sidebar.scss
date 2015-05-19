@@ -1,0 +1,12 @@
+@import "../../../node_modules/csstyle/csstyle";
+@import "../../variables";
+
+$sidebar-width: 300px !default;
+
+@include component(Sidebar){
+	position: fixed;
+	width: $sidebar-width;
+	height: 100%;
+	border-right: 1px solid rgb(221, 221, 221);
+	box-sizing: border-box;
+}

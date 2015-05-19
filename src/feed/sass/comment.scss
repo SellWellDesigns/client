@@ -1,0 +1,9 @@
+@import "../../../node_modules/csstyle/csstyle";
+
+@include component(Comment) {
+	padding: 1em 1em 0 1em;
+
+	@include part(actions){
+		padding: 1em 0;
+	}
+}

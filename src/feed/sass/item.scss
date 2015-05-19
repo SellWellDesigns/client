@@ -1,0 +1,29 @@
+@import "../../../node_modules/csstyle/csstyle";
+
+@include component(FeedItem){
+	margin: 2em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+
+	header {
+		border-bottom: 1px solid #ddd;
+		padding: 1em;
+	}
+
+	section {
+		padding: 1em;
+	}
+
+	footer {
+		background-color: #f6f7f8;
+	}
+
+	@include part(actions){
+		padding: 0 1em 1em 1em;
+	}
+
+	@include part(summary){
+		padding: 1em;
+		border-bottom: 1px solid #ddd;
+	}
+}

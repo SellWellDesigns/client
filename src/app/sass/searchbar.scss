@@ -1,0 +1,15 @@
+@import "../../../node_modules/csstyle/csstyle";
+
+@include component(SearchBar){
+	float: left;
+
+	input, input:focus {
+		border: none;
+		outline: none;
+		box-shadow: none;
+		border-bottom: 1px solid #ddd;
+		padding: 0.5em 0;
+		font-size: 12px;
+		font-weight: 100;
+	}
+}

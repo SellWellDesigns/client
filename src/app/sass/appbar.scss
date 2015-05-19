@@ -1,0 +1,11 @@
+@import "../../../node_modules/csstyle/csstyle";
+
+$appbar-height: 50px !default;
+
+@include component(AppBar) {
+	height: $appbar-height;
+	line-height: $appbar-height;
+	background-color: #fff;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	padding: 0 2em;
+}

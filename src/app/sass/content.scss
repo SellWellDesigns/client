@@ -1,0 +1,10 @@
+@import "../../../node_modules/csstyle/csstyle";
+@import "../../variables";
+
+$sidebar-width: 300px !default;
+
+@include component(Content) {
+	position: relative;
+	margin-left: $sidebar-width;
+	height: 100%;
+}

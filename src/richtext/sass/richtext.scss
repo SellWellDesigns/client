@@ -1,0 +1,59 @@
+@import "../../../node_modules/csstyle/csstyle";
+
+@include component(Richtext){
+	margin: 2em;
+	border: 1px solid rgb(221, 221, 221);
+	border-radius: 4px;
+
+	@include part(wrap){
+		position: relative;
+	}
+
+	@include part(input){
+		position:relative;
+		width: 100%;
+		border:none;
+		outline: none;
+		padding:0;
+		margin:0;
+		cursor:text;
+		overflow:hidden;
+		white-space:pre-wrap;
+		word-wrap:break-word;
+		box-shadow: none;
+		font-weight: 300;
+		letter-spacing: 1px;
+		background: none;
+		font-style: normal;
+		font-variant: normal;
+		color: rgb(8, 8, 8);
+		font-family: ProximaNova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		padding: 10px 10px 0 10px;
+		box-sizing: border-box;
+
+		@include option(highlight){
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			color: transparent;
+
+			span {
+				background-color: rgb(221, 221, 221);
+				color: #fff;
+			}
+		}
+	}
+
+	@include part(actions){
+		background-color: #f6f7f8;
+
+		a {
+			color: #333;
+			text-decoration: none;
+			padding: 1em;
+			display: inline-block;
+		}
+	}
+}
