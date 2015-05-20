@@ -1,5 +1,4 @@
-var dispatcher = require('_/dispatcher/index.jsx'),
-  StatusStore = require('_/stores/StatusStore.jsx')
+var dispatcher = require('_/dispatcher/index.jsx')
 
 module.exports = {
 

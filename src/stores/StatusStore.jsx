@@ -1,7 +1,6 @@
 var dispatcher = require('_/dispatcher/index.jsx'),
 	EventEmitter = require('events').EventEmitter,
 	assign = require('object-assign'),
-  $ = require('jquery'),
   $q = require('q'),
   api = require('_/api')
 

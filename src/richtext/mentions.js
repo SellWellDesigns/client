@@ -1,5 +1,3 @@
-var UserStore = require('_/stores/UserStore.jsx')
-
 module.exports = {
 
     tagRegex: /(^|\W)(@|#)([A-Za-z0-9-_.]*)/ig,
@@ -34,7 +32,6 @@ module.exports = {
     },
 
     findPossibles: function(str) {
-        // console.log(UserStore.getAll());
         return [];
     },
 
